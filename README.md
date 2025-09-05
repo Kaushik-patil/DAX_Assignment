@@ -10,8 +10,7 @@ A simple React app built with Vite featuring Login, Signup, and Dashboard pages 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/react-auth-vite-app.git
-
+git clone https://github.com/Kaushik-patil/DAX_Assignment.git
 
 2. Install dependencies:
 
