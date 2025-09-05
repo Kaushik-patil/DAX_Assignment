@@ -1,0 +1,147 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(192,220,212) 
+}
+
+.form-container {
+    background-color: #ffffff;
+    height: 500px;
+    width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header {
+    background-color: rgb(8,108,92);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    margin-bottom:5px;
+}
+
+.login-header p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+
+.login-fields{
+    height: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-fields p{
+    font-weight: 600;
+}
+
+.input-group {
+  position: relative; 
+}
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  font-size: 18px;
+}
+.input-group input {
+    height: 20px;
+    width: 300px;
+  border: none;
+  border-bottom: 1px solid #ccc; 
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+
+
+.input-group input:focus {
+  border-bottom: 2px solid grey; 
+   background-color: rgb(241, 239, 239);
+}
+
+.input-group .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+} 
+
+.login-button{
+    background-color:rgb(8,108,92) ;
+    color: #ffffff;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.login-fields p {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #000; 
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%; 
+    height: auto; 
+    padding: 20px 10px;
+  }
+
+  .login-fields p{
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .input-group input {
+    width: 100%; 
+  }
+
+  .login-button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-fields p{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .login-header h1 {
+    font-size: 22px;
+  }
+
+  .login-header p {
+    font-size: 14px;
+  }
+}
